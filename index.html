@@ -1,25 +1,126 @@
-Aquí tienes un ejemplo completo y básico de código HTML para una página web sencilla.
-Incluye estructura mínima, encabezado, párrafos, enlaces e imagen.
-Html<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Página Web</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reglas del Vóley</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>¡Bienvenido a mi página!</h1>
-    <p>Este es un ejemplo básico de una página web creada con HTML.</p>
-    <p>Visita <a href="https://www.example.com" target="_blank">este sitio</a> para más información.</p>
-    <img src="https://via.placeholder.com/300x150" alt="Imagen de ejemplo">
-    <h2>Mis lenguajes favoritos</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    </ul>
-    <footer>
-        <p>&copy; 2026 Mi Página Web</p>
-    </footer>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="hero-tag">⚡ Guía Oficial</span>
+      <h1 class="hero-title">VOLEIBOL</h1>
+      <p class="hero-subtitle">Conocé todas las reglas del juego</p>
+      <a href="#reglas" class="btn-hero">Explorar reglas</a>
+    </div>
+    <div class="ball-deco">🏐</div>
+  </header>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stat"><span class="stat-num">6</span><span class="stat-label">Jugadores por equipo</span></div>
+    <div class="stat"><span class="stat-num">25</span><span class="stat-label">Puntos por set</span></div>
+    <div class="stat"><span class="stat-num">3</span><span class="stat-label">Sets para ganar</span></div>
+    <div class="stat"><span class="stat-num">3</span><span class="stat-label">Toques máximos</span></div>
+  </div>
+
+  <!-- REGLAS -->
+  <main id="reglas" class="reglas-section">
+    <h2 class="section-title">Las Reglas</h2>
+    <div class="cards-grid">
+
+      <div class="card" data-index="0">
+        <div class="card-icon">👥</div>
+        <h3>El equipo</h3>
+        <p>Cada equipo tiene <strong>6 jugadores</strong> en cancha. Se permiten hasta 6 suplentes. El líbero es un jugador especialista en defensa con uniforme diferente.</p>
+      </div>
+
+      <div class="card" data-index="1">
+        <div class="card-icon">🏟️</div>
+        <h3>La cancha</h3>
+        <p>La cancha mide <strong>18 x 9 metros</strong>. La red está a 2,43 m (hombres) o 2,24 m (mujeres). Cada equipo ocupa una mitad del campo.</p>
+      </div>
+
+      <div class="card" data-index="2">
+        <div class="card-icon">✋</div>
+        <h3>Los toques</h3>
+        <p>Cada equipo puede tocar la pelota un <strong>máximo de 3 veces</strong> antes de pasarla al otro lado. Un jugador no puede tocar la pelota dos veces consecutivas.</p>
+      </div>
+
+      <div class="card" data-index="3">
+        <div class="card-icon">🏆</div>
+        <h3>El puntaje</h3>
+        <p>Se juega al mejor de <strong>5 sets</strong>. Los primeros 4 sets se juegan a 25 puntos, y el quinto a 15. Siempre se necesita una ventaja de 2 puntos para ganar.</p>
+      </div>
+
+      <div class="card" data-index="4">
+        <div class="card-icon">🔄</div>
+        <h3>La rotación</h3>
+        <p>Cuando el equipo recupera el saque, todos los jugadores <strong>rotan en sentido horario</strong>. El jugador que pasa a la posición 1 se convierte en el sacador.</p>
+      </div>
+
+      <div class="card" data-index="5">
+        <div class="card-icon">🚫</div>
+        <h3>Las faltas</h3>
+        <p>Son faltas: pisar la línea al sacar, tocar la red, pasar al campo contrario, más de 3 toques, o que la pelota toque el piso dentro del campo propio.</p>
+      </div>
+
+      <div class="card" data-index="6">
+        <div class="card-icon">📣</div>
+        <h3>El saque</h3>
+        <p>El saque debe hacerse <strong>detrás de la línea de fondo</strong>. Si cae en la red o sale, el punto es del rival. El servidor tiene 8 segundos para ejecutarlo.</p>
+      </div>
+
+      <div class="card" data-index="7">
+        <div class="card-icon">⬆️</div>
+        <h3>El bloqueo</h3>
+        <p>Los jugadores de primera línea pueden <strong>bloquear en la red</strong>. Si el bloqueo toca la pelota, ese contacto no cuenta como toque del equipo.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- SECCIÓN LIBERO -->
+  <section class="libero-section">
+    <div class="libero-content">
+      <div class="libero-text">
+        <span class="badge">Posición especial</span>
+        <h2>El Líbero 🟡</h2>
+        <p>El líbero es el especialista defensivo del vóley. Viste un uniforme de color diferente y tiene reglas propias:</p>
+        <ul>
+          <li>No puede sacar ni bloquear</li>
+          <li>No puede rematar por encima de la red</li>
+          <li>Puede entrar y salir libremente por el jugador de zona 6</li>
+          <li>Su sustitución no cuenta en el límite de cambios</li>
+        </ul>
+      </div>
+      <div class="libero-visual">
+        <div class="court-diagram">
+          <div class="court-net"></div>
+          <div class="player p1">1</div>
+          <div class="player p2">2</div>
+          <div class="player p3">3</div>
+          <div class="player p4">4</div>
+          <div class="player p5">5</div>
+          <div class="player libero">L</div>
+        </div>
+        <p class="court-caption">Posiciones en cancha</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>🏐 <strong>Vóley</strong> — El deporte de equipo por excelencia</p>
+    <p class="footer-sub">Basado en el reglamento oficial de la FIVB</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
