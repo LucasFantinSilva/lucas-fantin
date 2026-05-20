@@ -1,2 +1,23 @@
-# lucas-fantin
-pagina web
+Html<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Página Web</title>
+</head>
+<body>
+    <h1>¡Bienvenido a mi página!</h1>
+    <p>Este es un ejemplo básico de una página web creada con HTML.</p>
+    <p>Visita <a href="https://www.example.com" target="_blank">este sitio</a> para más información.</p>
+    <img src="https://via.placeholder.com/300x150" alt="Imagen de ejemplo">
+    <h2>Mis lenguajes favoritos</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <footer>
+        <p>&copy; 2026 Mi Página Web</p>
+    </footer>
+</body>
+</html>
